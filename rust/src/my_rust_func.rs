@@ -1,6 +1,6 @@
 
 #[no_mangle]
-pub extern fn my_rust_func(f : f32) -> f32 {
+pub extern "C" fn my_rust_func(f: f32) -> f32 {
     f * 2.0
 }
 
@@ -13,4 +13,3 @@ mod tests {
         assert_eq!(my_rust_func(2.0), 4.0);
     }
 }
-
