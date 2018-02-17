@@ -1,0 +1,11 @@
+[package]
+name = "rust-to-unity"
+version = "0.1.0"
+authors = ["Härski <harski@cru.fi>"]
+
+[dependencies]
+
+
+[lib]
+name = "rust_lib"
+crate-type = ["dylib"]
